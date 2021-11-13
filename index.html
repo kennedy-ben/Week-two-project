@@ -23,11 +23,47 @@
 
         <form action="/index.html">
             <lebel for ="Birthday">Birthday:</lebel>
-            <input type="date" id="Bithday" name="Bithday"/>
+            <input type="date" id="Bithday" name="Bithday" onkeyup="calculated_age()"/>
+            &nbsp;&nbsp;
             <input type="submit"/>
      </form>
+     <p id="calculated_age"></p>
+     <script>
+        function calculated_age()
+        {
+            var birthday = new Date(document.getElementById("birthday date").value);
+            var Bithday = Bithday.getDate();
+            var Bithday = Bithday.getmonnth();
+            var Bithday = Bithday.getFullYear();
+
+            var today_date = new Date();
+            var today_day = today_Date.getDate();
+            var today_month = today_date.getMonth();
+            var today_year = today_date.getFullYear();
+
+            var calculated_age = 0;
+
+            if (today_month > Bithday_month) calculated_age = today_year - birthday_date_year;
+            else if (today_month === birthday_month)
+            {
+                if (today_day <= birthday_day) calculated_age = today_year - birthday_date_year;
+                else calculated_age = today_year - birthday - 1;
+            }
+            else calculated_age = today_year - birthday - 1;
+            
+
+            var output_value = document.getElementById("birthday date").value;
+            document.getElementById('calculated_age') .innerHTML = output_value;
+
+
+        }
+
+    </script>
+    
+
+
      <br>
-     <leble>Gender</leble>
+          <leble>Gender</leble>
      <select name="Gender">
          <option value="male"> male</option>
          <option value="Female"> Female</option>
@@ -45,7 +81,6 @@
     
 
     </body>
-    
-
+   
     
 </html>
