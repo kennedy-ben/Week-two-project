@@ -1,86 +1,58 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-undef */
 <!DOCTYPE html>
 <html>
-    <head>
-        <tittle> <h1>HOW GHANIAN CULTURE IS UPHELD</h1></tittle>
-        <link rel="stylesheet" href="css/styles.css" />
 
-    </head>
+<head>
+    <tittle>
+        <h1>HOW GHANIAN CULTURE IS UPHELD</h1>
+    </tittle>
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <body>
-        
-        <p>
-            This application consist of Akan names which are derrived from Ghanian 
-            culture from the week they were born and also the days.Most people know their 
-            birthday according to the week or day they were born,either was an holiday 
-            but Ghanian they remember the day according to their week days,ie;If one is a male 
-            and was born on Sunday his name will be 'Kwasi',and if is a female born on sunday 
-            she will be called 'Akosua'.Which is different from our african culture and also naming 
-            children.
+</head>
 
+<body>
 
-        </p>
-        <br>
-
-        <form action="/index.html">
-            <lebel for ="Birthday">Birthday:</lebel>
-            <input type="date" id="Bithday" name="Bithday" onkeyup="calculated_age()"/>
-            &nbsp;&nbsp;
-            <input type="submit"/>
-     </form>
-     <p id="calculated_age"></p>
-     <script>
-        function calculated_age()
-        {
-            var birthday = new Date(document.getElementById("birthday date").value);
-            var Bithday = Bithday.getDate();
-            var Bithday = Bithday.getmonnth();
-            var Bithday = Bithday.getFullYear();
-
-            var today_date = new Date();
-            var today_day = today_Date.getDate();
-            var today_month = today_date.getMonth();
-            var today_year = today_date.getFullYear();
-
-            var calculated_age = 0;
-
-            if (today_month > Bithday_month) calculated_age = today_year - birthday_date_year;
-            else if (today_month === birthday_month)
-            {
-                if (today_day <= birthday_day) calculated_age = today_year - birthday_date_year;
-                else calculated_age = today_year - birthday - 1;
-            }
-            else calculated_age = today_year - birthday - 1;
-            
-
-            var output_value = document.getElementById("birthday date").value;
-            document.getElementById('calculated_age') .innerHTML = output_value;
+    <p>
+        This application consist of Akan names which are derrived from Ghanian
+        culture from the week they were born and also the days.Most people know their
+        birthday according to the week or day they were born,either was an holiday
+        but Ghanian they remember the day according to their week days,ie;If one is a male
+        and was born on Sunday his name will be 'Kwasi',and if is a female born on sunday
+        she will be called 'Akosua'.Which is different from our african culture and also naming
+        children.
 
 
-        }
+    </p>
+    <br>
 
-    </script>
-    
+    <form action="/index.html">
+        <lebel for="Birthday">Birthday:</lebel>
+        <input type="date" id="Bithday" name="Bithday" onkeyup="calculated_age()" />
+        &nbsp;&nbsp;
+        <input type="submit" />
+    </form>
+    <p id="calculated_age"></p>
 
 
-     <br>
-          <leble>Gender</leble>
-     <select name="Gender">
-         <option value="male"> male</option>
-         <option value="Female"> Female</option>
-         <option value="Other">Other</option>
-         </select>
-                             
-                    <input type="submit" name="submit"Value="submit">  
-         </form>
-         <br>
-            
-         <p class="bottom " >The Akan name is:...........</p>
 
-         <script src="./js/controlflow.js"></script>
-    
-    
+    <br>
+    <leble>Gender</leble>
+    <select name="Gender">
+        <option value="male"> male</option>
+        <option value="Female"> Female</option>
+        <option value="Other">Other</option>
+    </select>
 
-    </body>
-   
-    
+    <input type="submit" name="submit" Value="submit">
+    </form>
+    <br>
+
+    <p class="bottom ">The Akan name is:...........</p>
+
+    <script src="./js/controlflow.js"></script>
+
+</body>
+
+
 </html>
